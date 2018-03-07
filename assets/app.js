@@ -1,8 +1,10 @@
 $(document).ready(function(){
 
-    var initialButtons = ["Rick & Morty", "The Simpsons", "Shameless", "Black Mirror"];
+    var initialButtons = ["Rick and Morty", "The Simpsons", "The IT Crowd", "Black Mirror"];
 
     function displayButtons(){
+
+        $("#button-display").empty();
 
         for(i = 0; i < initialButtons.length; i++){
             var newButton = $("<button>");
@@ -14,7 +16,7 @@ $(document).ready(function(){
         };
     };
 
-    displayButtons();
+    
 
     function showGifs(){
        $ ("#display-gifs").empty();
@@ -29,7 +31,7 @@ $(document).ready(function(){
 
             for(j = 0; j < 10; j++){
                 var displayDiv = $("<div>");
-                displayDiv.addClass("holder");
+                displayDiv.addClass("float-div");
 
                 var gif = $("<img>");
                 gif.attr("src", response.data[j].images.original_still.url);
@@ -47,11 +49,23 @@ $(document).ready(function(){
             }
        });
     }
-
     
+    $("#submitShow").on("click", function(){
+        
+        var input = $("#show-input").val().trim();
+        initialButtons.push(input);
+
+        displayButtons();
+
+        return false;
+    })
 
 
 
 
-    
+    displayButtons();
+
+
+    $(document).on("click", "#input", showGifs);
+
 });

@@ -19,3 +19,15 @@ body{
     margin-right: 100px;
     margin-bottom: 15px;
 }
+.gif{
+    width: 200px;
+    height: 200px;
+    margin-left: 15px;
+}
+.float-div{
+    float: left;
+}
+p{
+    margin-left: 15px;
+    color: #fff;
+}
