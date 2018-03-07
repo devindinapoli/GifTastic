@@ -1,7 +1,21 @@
 .btn{
     margin-left: 15px;
     margin-bottom: 5px;
+    background-color: rgb(57,57,59);
 }
 #form{
     margin-left: 15px;
+    color: #fff;
+    
+}
+body{
+    background-image: url("images/tvbackground.jpg");
+}
+.jumbotron{
+    color: #fff;
+    background-color: rgb(57,57,59);
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 15px;
 }
