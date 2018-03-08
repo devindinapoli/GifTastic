@@ -4,6 +4,9 @@
     background-color: rgb(57,57,59);
     font-family: 'Bangers', cursive;
     font-size: 20px;
+    border-width: 2px;
+    border-color: black;
+    height: 50px;
 }
 #form{
     color: #fff;
@@ -42,11 +45,16 @@ h1{
 }
 label{
     margin-bottom: 0px;
-}
-.btn{
-    border-width: 2px;
-    border-color: black;
-}
+}   
 #button-display{
     text-align: center;
+}
+#show-input{
+    width: 110px;
+    margin-left: 15px;
+}
+.submit-button{
+    font-size: 18px;
+    height: 40px;
+    margin-top: 2px;
 }
