@@ -54,7 +54,8 @@ $(document).ready(function(){
         
         var input = $("#show-input").val().trim();
         initialButtons.push(input);
-
+        
+        form.reset();
         displayButtons();
 
         return false;
