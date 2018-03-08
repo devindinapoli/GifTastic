@@ -61,11 +61,24 @@ $(document).ready(function(){
     })
 
 
+    function changeState(){
+        var state = $(this).attr("data-state");
+        var stillState = $(this).attr("data-still");
+        var animateState = $(this).attr("data-animate");
 
+        if(state === "still"){
+            $(this).attr("src", animateState);
+            $(this).attr("data-state", "animate");
+        }
+        else{
+            $(this).attr("src", stillState);
+            $(this).attr("data-state", "still");
+        }
+    }
 
     displayButtons();
 
 
     $(document).on("click", "#input", showGifs);
-
+    $(document).on("click", ".gif", changeState);
 });
