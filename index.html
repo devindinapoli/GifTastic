@@ -19,21 +19,23 @@
             <hr>
             <p>Search a show to add the TV show button, then click the button to see the GIFs!</p>
             <p>Click on a GIF to play, click again to pause!</p>
+            <hr>
+            <div class="row">
+                    <div class="col-md-12">
+                        <form id="form">
+                        <label for="user-input">Enter Your Favorite TV Show!</label><br>
+                        <input type="text" id="show-input">
+                        <input id="submitShow" type="submit" value="Add TV Show" class="btn btn-dark">
+                        </form>
+                    </div>
+                </div>
         </div>
     
         <div class="row">
             <div class="col-md-12" id="button-display"></div>
         </div>
         
-        <div class="row">
-            <div class="col-md-12">
-                <form id="form">
-                <label for="user-input">Enter Your Favorite TV Show!</label><br>
-                <input type="text" id="show-input">
-                <input id="submitShow" type="submit" value="Add Button" class="btn btn-dark">
-                </form>
-            </div>
-        </div>
+        
         
         <div class="row">
             <div class="col-md-12" id="display-gifs"></div>

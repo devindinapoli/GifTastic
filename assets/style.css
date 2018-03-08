@@ -6,9 +6,9 @@
     font-size: 20px;
 }
 #form{
-    margin-left: 15px;
     color: #fff;
     font-family: 'Bangers', cursive;  
+    margin-top: 25px;
 }
 body{
     background-image: url("images/tvbackground.jpg");
@@ -39,4 +39,14 @@ p{
 }
 h1{
     font-size: 54px;
+}
+label{
+    margin-bottom: 0px;
+}
+.btn{
+    border-width: 2px;
+    border-color: black;
+}
+#button-display{
+    text-align: center;
 }
